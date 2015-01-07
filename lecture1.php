@@ -1,47 +1,66 @@
 <?php
 	class human {
-		//class body
-		public $name = “default name”;
-		public $breed = “best breed”;
-		public $gender = “male”;
-		public $price = 0;
+		public $firstName = "default name";
+		public $lastName= "default last name";
+
+		function getName() {
+		return "{$this­>firstName}" .
+		"{$this­>lastName}";
+		}
 	}
 	class animal{
-		//class body
-		public $name = “default name”;
-		public $breed = “best breed”;
-		public $gender = “male”;
-		public $price = 0;	
+		public $firstName = "default name";
+		public $lastName= "default last name";
+
+		function getName() {
+		return "{$this­>firstName}" .
+		"{$this­>lastName}";
+		}
 	}
 	class alien{
-		//class body
-		public $name = “default name”;
-		public $breed = “best breed”;
-		public $gender = “male”;
-		public $price = 0;	
+		public $firstName = "default name";
+		public $lastName= "default last name";
+		
+		function getName() {
+		return "{$this­>firstName}" .
+		"{$this­>lastName}";
+		}			
 	}
 	$human1 = new human();
-	print $human1­>name;
+	$human1­>firstName = "Blake";
+	$human1­>lastName = "Dayman";
+
+	print "The strangers name is {$human1->getName()}";
 	// default name
 
 	$human2 = new human();
-	print $human2­>name;
+	$human2­>firstName = "Dayman";
+	$human2­>lastName = "Dayman";
+	print "The strangers name is {$human2->getName()}";
 	// default name
 
 	$animal1 = new animal();
-	print $animal1­>name;
+	$animal1­>firstName = "Blake";
+	$animal1­>lastName = "Blake";
+	print "The animals name is {$animal1->getName()}";
 	// default name
 
 	$animal2 = new animal();
-	print $animal2­>name;
+	$animal2­>firstName = "Dayman";
+	$animal2­>lastName = "Blake";
+	print "The animals name is {$animal2->getName()}";
 	// default name
 
 	$alien1 = new alien();
-	print $alien1­>name;
+	$alien1­>firstName = "ekalB";
+	$alien1­>lastName = "namyaD";
+	print "The aliens name is {$alien1->getName()}";
 	// default name
 
-	$alien2 = new alienanimal2
-	print $alien2­>name;
+	$alien2 = new alien();
+	$alien2­>firstName = "namyaD";
+	$alien2­>lastName = "ekalB";
+	print "The aliens name is {$alien2->getName()}";
 	// default name
 	
 	?>
