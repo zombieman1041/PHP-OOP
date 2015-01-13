@@ -3,18 +3,16 @@
 $a = false;
 $b = 0;
 
-// Since $a is a boolean, it will return true
 if (is_bool($a) === true) {
     echo "Boolean is life";
 }
 
-// Since $b is not a boolean, it will return false
 if (is_bool($b) === false) {
     echo "<br> <br>No boolean no life";
 }
 // example 2
-$var_name1=678; 
-if (is_integer($var_name1))  
+$num=678; 
+if (is_integer($num))  
 {  
 echo "<br><br>$var_name1 is Integer<br>" ;  
 }  
