@@ -24,12 +24,12 @@
 			" my gender is " . $this->gender . " my weight is " . $this->weight;
 		}		
   	}
-  	class guy extends Human{
+  	class Guy extends Human{
   		function greet(){
   			return $this->hi;
   		}
   	}
-  	class girl extends Human{
+  	class Girl extends Human{
   		function hello(){
   			return $this->hey;
   		}
